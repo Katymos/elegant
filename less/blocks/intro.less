@@ -1,0 +1,38 @@
+.intro {
+	background-image: url(../img/bg-intro.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 1337px;
+	margin-bottom: 150px;
+
+	& h1 {
+		position: relative;
+		margin: 0;
+
+		font-size: 95px;
+		line-height: 140px;
+		font-weight: 300;
+
+		color: #fff;
+		text-align: center;
+		padding-top: 480px;
+		padding-bottom: 120px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -30px;
+			width: 61px;
+			height: 61px;
+			background-image: url(../img/icons/icon-arrow-down.png);
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		& span {
+			font-style: italic;
+		}
+	}
+}
